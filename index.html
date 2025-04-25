@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>理论考证在线测试（总分80）</title>
+    <title>考证理论在线测试（总分80）</title>
+           
 <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -17,7 +18,7 @@
             border-bottom: 2px solid #3498db;
             padding-bottom: 6px;
             margin: 8px 0;
-            font-size: 2.5em;
+            font-size: 1.8em;
             text-align: center;
         }
         .question {
@@ -84,10 +85,12 @@
             position: sticky;
             top: 8px;
             float: right;
-            font-size: 18px !important; 
+            font-size: 36px !important; 
 
         }
         button {
+            display: block;         /* 改为块级元素 */
+            margin: 15px auto;     /* 上下边距15px，左右自动居中 */
             background: #3498db;
             color: white;
             border: none;
@@ -96,7 +99,6 @@
             cursor: pointer;
             font-size: 30px;
             transition: all 0.3s;
-            margin: 10px 0;
         }
         button:hover {
             background: #2980b9;
@@ -132,11 +134,11 @@
             cursor: pointer;
         }
     </style>
-    
+
 </head>
 <body>
     <div id="examPage">
-        <h1>机械制图在线测试 <span id="scoreDisplay"></span></h1>
+        <h1>理论真题测试（删减作图题20分） <span id="scoreDisplay"></span></h1>
         <div id="questions"></div>
         <button onclick="handleSubmit()" id="submitBtn">提交试卷</button>
     </div>
