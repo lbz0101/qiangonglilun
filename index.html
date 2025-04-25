@@ -27,12 +27,11 @@
             border-radius: 4px;
             box-shadow: 0 1px 2px rgba(0,0,0,0.1);
         }
-        /* 选择题样式调整 */
         .multiple-choice p {
-            font-size: 23px !important;  /* 题目文字 */
+            font-size: 23px !important;
         }
         .multiple-choice label {
-            font-size: 23px !important;  /* 选项文字 */
+            font-size: 23px !important;
             display: flex;
             align-items: center;
         }
@@ -43,9 +42,10 @@
             border: 1px solid #ddd;
             border-radius: 3px;
         }
+        /* 调整横向选项间距 */
         .options-row {
             display: flex;
-            gap: 15px;
+            gap: 25px;        /* 从15px改为25px */
             margin-top: 6px;
         }
         .fill-group {
@@ -79,21 +79,22 @@
         #scoreDisplay {
             background: #3498db;
             color: white;
-            padding: 4px 10px;
+            padding: 6px 12px;
             border-radius: 3px;
             position: sticky;
             top: 8px;
             float: right;
-            font-size: 13px;
+            font-size: 18px !important; 
+
         }
         button {
             background: #3498db;
             color: white;
             border: none;
-            padding: 8px 16px;
+            padding: 16px 32px;
             border-radius: 3px;
             cursor: pointer;
-            font-size: 13px;
+            font-size: 30px;
             transition: all 0.3s;
             margin: 10px 0;
         }
@@ -108,11 +109,10 @@
             color: #e74c3c;
             margin-left: 4px;
         }
-        /* 单选按钮同步放大 */
         input[type="radio"] {
             margin-right: 8px;
-            width: 23px;        /* 与文字高度一致 */
-            height: 23px;       /* 与文字高度一致 */
+            width: 23px;
+            height: 23px;
             border: 2px solid #ccc;
             border-radius: 50%;
             appearance: none;
@@ -127,7 +127,7 @@
         }
         label {
             display: block;
-            margin: 1px 0;
+            margin: 10px 0;
             padding: 2px;
             cursor: pointer;
         }
