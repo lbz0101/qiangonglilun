@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>机械制图在线测试</title>
- <style>
+<style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             max-width: 800px;
@@ -27,12 +27,12 @@
             border-radius: 4px;
             box-shadow: 0 1px 2px rgba(0,0,0,0.1);
         }
-        /* 选择题样式 */
+        /* 选择题样式调整 */
         .multiple-choice p {
-            font-size: 18px !important;
+            font-size: 23px !important;  /* 题目文字 */
         }
         .multiple-choice label {
-            font-size: 20px !important;  /* 选项文字改为20px */
+            font-size: 23px !important;  /* 选项文字 */
             display: flex;
             align-items: center;
         }
@@ -108,11 +108,11 @@
             color: #e74c3c;
             margin-left: 4px;
         }
-        /* 单选按钮调整 */
+        /* 单选按钮同步放大 */
         input[type="radio"] {
             margin-right: 8px;
-            width: 20px;         /* 高度与文字一致 */
-            height: 20px;       /* 高度与文字一致 */
+            width: 23px;        /* 与文字高度一致 */
+            height: 23px;       /* 与文字高度一致 */
             border: 2px solid #ccc;
             border-radius: 50%;
             appearance: none;
@@ -132,6 +132,7 @@
             cursor: pointer;
         }
     </style>
+    
 </head>
 <body>
     <div id="examPage">
