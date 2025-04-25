@@ -3,6 +3,19 @@
 <head>
     <title>考证理论在线测试</title>
     <style>
+        * 新增：全局高度设置 */
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        /* 新增：考试页面布局 */
+        #examPage {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            padding-bottom: 2px; /* 给底部文字留出空间 */
+        }
         /* 登录页面样式 */
         #loginPage {
             text-align: center;
