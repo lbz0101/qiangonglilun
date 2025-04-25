@@ -386,6 +386,12 @@
             const studentName = document.getElementById('nameSelect').value;
 document.getElementById('scoreDisplay').textContent = `${studentName}  ${totalScore}分`;
             window.scrollTo(0, 0);
+ setTimeout(() => {
+                document.getElementById('examPage').style.display = 'none';
+                document.getElementById('examPage').offsetHeight; // 触发重排
+                document.getElementById('examPage').style.display = 'block';
+            }, 50);
+            
         }
 
         // 工具函数
@@ -393,6 +399,8 @@ document.getElementById('scoreDisplay').textContent = `${studentName}  ${totalSc
         function getRandomIndices(max, n) { return shuffle([...Array(max).keys()]).slice(0, n); }
         function getRandomKey(obj) { return Object.keys(obj)[Math.floor(Math.random()*Object.keys(obj).length)]; }
         function shuffle(arr) { for(let i=arr.length-1; i>0; i--){ const j=Math.floor(Math.random()*(i+1)); [arr[i],arr[j]]=[arr[j],arr[i]] } return arr; }
+
+        
     </script>
 </body>
 </html>
