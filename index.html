@@ -7,10 +7,10 @@
 
         /* 新增：考试页面布局 */
         #examPage {
-            display: flex;
+            display: flex !important; /* 强制覆盖原有display属性 */
             flex-direction: column;
-            min-height: calc(100vh - 100px);
-            padding-bottom: 2px; /* 给底部文字留出空间 */
+            min-height: 100vh;
+            transform: translateZ(0); /* 触发硬件加速强制重绘 */
         }
         /* 登录页面样式 */
         #loginPage {
